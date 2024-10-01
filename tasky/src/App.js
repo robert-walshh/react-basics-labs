@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="container">
       <h1>Tasky</h1>
-      <Task title="Dishes" deadline="Today" description="Wash dishes and put away" />
-      <Task title="Laundry" deadline="Tomorrow" description="Fold laundry and put away" />
-      <Task title="Tidy" deadline="Today" description="Tidy house and dust rooms" />
+      <Task title={taskState.tasks[0].title} deadline={taskState.tasks[0].deadline} description={taskState.tasks[0].description} />
+      <Task title={taskState.tasks[1].title} deadline={taskState.tasks[1].deadline} description={taskState.tasks[1].description} />
+      <Task title={taskState.tasks[2].title} deadline={taskState.tasks[2].deadline} description={taskState.tasks[2].description} />
     </div>
   );
 }
